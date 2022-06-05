@@ -6,10 +6,10 @@ const [state,dispatch] = useReducer(counterReducer,0)
   return (
     <div id="main">
         <span id ={counter}>{state.count}</span>
-     <button onClick={() => dispatch("increment")} id={increment-btn}>
+     <button onClick={() => dispatch("increment")} id="increment-btn">
         increment
       </button>
-      <button onClick={() => dispatch("decrement")} id = {decrement-btn}>
+      <button onClick={() => dispatch("decrement")} id = "decrement-btn">
         decrement
       </button>
     </div>
