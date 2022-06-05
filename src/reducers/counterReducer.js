@@ -6,5 +6,6 @@ const counterReducer = (state,action) =>{
     case "decrement":
       return { count: state.count !== 0 ? state.count - 1 : (state.count = 0) }
 }
+}
 
 export {counterReducer}
