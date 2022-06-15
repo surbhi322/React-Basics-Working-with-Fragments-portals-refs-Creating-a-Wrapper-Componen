@@ -1,5 +1,5 @@
 import react, {useReducer} from 'react';
-import {counterReducer} from '../reducers/CounterReducer.js';
+import {counterReducer} from '../reducers/counterReducer.js';
 import '../styles/App.css';
 const App = () =>{
   const [state, dispatch] = useReducer(counterReducer, 0);
