@@ -1,9 +1,12 @@
 const counterReducer = (state,action) =>{
-  if(action === 'INC'){
-     return state + 1;
-  }else if(action ==='DEC'){
-     return state-1;
-  }
+switch(action.type) {
+        case 'increment' :
+          return {count: state.count + 1}
+        case 'decrement' :
+          return {count: state.count - 1}
+        default :
+        throw new Error();
+      }
 }
 
 export {counterReducer}
